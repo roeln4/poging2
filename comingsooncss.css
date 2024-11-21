@@ -1,0 +1,370 @@
+/* ALLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2e5e4;
+    color: #fff;
+}
+
+/* HEADER */
+.header {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+
+.text-banner span {
+    display: inline-block;
+    font-size: 2rem;
+    margin: 0 30px;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 420px 0px rgba(255, 200, 200, 0.7), 840px 0px rgba(255, 100, 100, 0.5), 1260px 0px rgba(255, 50, 50, 0.3),
+    -420px 0px rgba(255, 200, 200, 0.7), -840px 0px rgba(255, 100, 100, 0.5), -1260px 0px rgba(255, 50, 50, 0.3);
+}
+
+
+
+img {
+  position: sticky; /* Zorgt ervoor dat het element "sticky" is */
+  top: 0; /* Plaatst het aan de bovenkant van de pagina */
+  width: 100px; /* Breedte van de afbeelding */
+  margin: 0 auto; /* Centreert het element horizontaal */
+  display: block; /* Zorgt ervoor dat de afbeelding zich als een blok-element gedraagt */
+}
+}
+
+
+
+
+
+/* INHOUD PAGINA */
+.deel1 {
+    display: grid;
+    gap: 0px;
+    padding: 0px;
+    padding-top: 0px;
+    text-align: center;
+    margin: auto;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #000;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: normal;
+}
+p {
+    margin: 20px 0px;
+    color: #000;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+
+/* AFBEELDINGEN LINKS */
+.images-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px;
+    background-color: #f2e5e4;
+    position: relative;
+}
+.images-grid .image-box {
+    max-height: 500px;
+    border-radius: 0px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+  }
+.images-grid img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    /*opacity: 0;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    -o-transition: all 2s ease;*/
+  }
+.image-button{
+    position: absolute;
+    margin: auto;
+    bottom: 20px;
+    left: 50%;
+    width: 40%;
+    transform: translateX(-50%);
+    background: rgba(179, 140, 140, 0.8);
+    font-size: 20px;
+    transition: background-color 0.5s ease;
+    cursor: pointer;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    border: 2px solid rgba(51, 51, 51, 0.8);
+    border-radius: 5px;
+}
+.images-grid img:hover {
+    transform: scale(1.05);
+}
+.image-button:hover{
+    background-color: rgba(51, 51, 51, 1);
+}
+.images-grid .image-box:hover img {
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+/* CONTACT FORM RECHTS */
+.form-box {
+    background-color: #f2e5e4;
+    padding: 20px;
+    padding-top: 0px;
+    text-align: center;
+    color: #000;
+    width: 30%;
+    margin: auto;
+}
+
+@media (max-width: 1600px) {
+  .form-box {
+    width: 100%;
+  }
+}
+
+
+
+.form-box img {
+    width: 100%;
+    max-height: 550px;
+    border-radius: 0px;
+    object-fit: cover;
+    opacity: 0;
+-webkit-transition: all 2s ease;
+-moz-transition: all 2s ease;
+-ms-transition: all 2s ease;
+-o-transition: all 2s ease;
+align-self: start;
+}
+.form-box h2 {
+    font-size: 2rem;
+    color: #000;
+    text-align: center;
+    margin-top: 20px;
+}
+.form-box p {
+    margin: 20px 0px;
+    color: #000;
+    text-align: center;
+    font-size: 1.2rem;
+}
+button, input {
+    background-color: #d40000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: ;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#form .input-row {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+#form .input-row div {
+    width: 100%;
+}
+#form label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000;
+    display: block;
+    margin: 0px;
+    text-align: left;
+    padding: 5px;
+    flex: 1;
+}
+#form input[type="text"],
+#form input[type="email"],
+#form textarea,
+#form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #f2e5e4;
+    color: #000;
+    font-size: 1rem;
+    margin: 0px;
+    flex: 1;
+    font-weight: bold;
+    resize: none;
+}
+
+
+
+
+
+
+
+
+
+
+.deel2 {
+  display: grid;
+  padding: 0px;
+  padding-top: 0px;
+  margin-left: 15%;
+  margin-right: 15%;
+ }
+.portfolio-box, .reviews-box {
+     text-align: center;
+ }
+.reviews-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px;
+    grid-column: span 2;
+    text-align: center;
+    margin-top: 0px;
+}
+.review {
+    padding: 10px;
+    margin: 20px;
+    background-color: #333;
+ }
+ .review img {
+     width: 150px;
+  }
+
+
+.portfolio-box h3, .reviews-box h3 {
+    font-size: 1.8rem;
+    color: #000;
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+.images-grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px;
+    background-color: #f2e5e4;
+    position: relative;
+}
+.images-grid2 .image-box2 {
+    max-height: 500px;
+    border-radius: 0px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+  }
+.images-grid2 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    opacity: 0;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    -o-transition: all 2s ease;
+  }
+.images-grid2 h2 {
+    font-size: 3rem;
+    color: #000;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.images-grid2 h3 {
+    font-size: 1.8rem;
+    color: #000;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: left;
+}
+.images-grid2 p {
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #000;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Standaard styling voor de widget */
+.phone-widget {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 1000;
+    background-color: #f5f5f5; /* Achtergrondkleur voor de bel-emoji */
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+    max-width: 5%;
+}
+
+/* Standaard styling voor het telefoonnummer (onzichtbaar) */
+.phone-number {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    bottom: 60px; /* Plaatst het nummer boven de bel */
+    right: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 8px;
+    white-space: nowrap;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateY(10px); /* Voor een subtiel uitschuif-effect */
+    font-size: 1rem;
+}
+
+/* Hover-effect om het telefoonnummer te tonen */
+.phone-widget:hover .phone-number {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0); /* Terug naar originele positie */
+}
